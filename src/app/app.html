@@ -44,11 +44,12 @@
     -moz-osx-font-smoothing: grayscale;
     display: block;
     height: 100dvh;
+    background: navy;
   }
 
   h1 {
     font-size: 3.125rem;
-    color: var(--gray-900);
+    color: lightblue;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.125rem;
@@ -60,7 +61,7 @@
 
   p {
     margin: 0;
-    color: var(--gray-700);
+    color: white;
   }
 
   main {
@@ -112,8 +113,8 @@
     display: flex;
     align-items: center;
     --pill-accent: var(--bright-blue);
-    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
-    color: var(--pill-accent);
+    background: lightblue;
+    color: navy;
     padding-inline: 0.75rem;
     padding-block: 0.375rem;
     border-radius: 2.75rem;
@@ -130,7 +131,8 @@
   }
 
   .pill:hover {
-    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+    background: black;
+    color: lightblue;
   }
 
   .pill-group .pill:nth-child(6n + 1) {
@@ -232,19 +234,19 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title() }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h1>Lee Gallagher</h1>
+      <p>My portfolio, now built in Angular.</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
         @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'Prompt and best practices for AI', link: 'https://angular.dev/ai/develop-with-ai'},
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
+          { title: 'About', link: 'https://angular.dev' },
+          { title: 'Services', link: 'https://angular.dev/tutorials' },
+          { title: 'Web Development', link: 'https://angular.dev/ai/develop-with-ai'},
+          { title: 'Software Development', link: 'https://angular.dev/tools/cli' },
+          { title: 'AI Implementation', link: 'https://angular.dev/tools/language-service' },
+          { title: 'Past Projects', link: 'https://angular.dev/tools/devtools' },
         ]; track item.title) {
           <a
             class="pill"
