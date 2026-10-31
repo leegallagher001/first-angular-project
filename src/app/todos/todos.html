@@ -1,2 +1,3 @@
-<p>This is the 'todos' component.</p>
-<p>Well done Lee - you might figure this Angular thing out after all.</p>
+@for (todo of todoItems(); track todo.id) {
+    <p><b>{{ todo.title }}</b></p>
+}
