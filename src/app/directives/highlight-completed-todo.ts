@@ -10,6 +10,9 @@ export class HighlightCompletedTodo {
     if (this.isCompleted()) {
       this.el.nativeElement.style.backgroundColor = 'lightgreen';
       this.el.nativeElement.style.color = 'darkgreen';
+    } else {
+      this.el.nativeElement.style.backgroundColor = 'lightblue';
+      this.el.nativeElement.style.color = 'darkblue';
     }
   });
 }
